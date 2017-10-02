@@ -92,9 +92,6 @@ public class HomePrice {
         LatLong latLong2 = new LatLong(46.862496, 103.846656);
         LatLong latLong3 = new LatLong(31.539538, -110.756196);
 
-        System.out.println(latLong1.getLatitude());
-
-
         Person harryPotter = new Person("Harry",latLong1 );
 
         Person tuvanThroatSinger = new Person("Mr. Vibrato", latLong2);
