@@ -4,25 +4,23 @@ public class City {
 
     private String cityName;
     private double avgHomePrice;
-    private double latitude;
-    private double longitude;
+    private LatLong latLong;
 
-    City(String cityName, double avgHomePrice, double latitude, double longitude) {
+    City(String cityName, double avgHomePrice, LatLong latLong) {
         this.cityName = cityName;
         this.avgHomePrice = avgHomePrice;
-        this.latitude = latitude;
-        this.longitude = longitude;
+        this.latLong = latLong;
     }
 
     public double getAvgHomePrice() {
         return avgHomePrice;
     }
 
-    public double getLatitude() {
-        return latitude;
+    public LatLong getLatLong() {
+        return latLong;
     }
 
-    public double getLongitude() {
-        return longitude;
+    public String getCityName() {
+        return cityName;
     }
 }
