@@ -1,5 +1,4 @@
-# HomePrices 
-### (Simple Coding Exercise)
+# HomePrices
 
 A city object contains an average home price and longitude/latitude coordinates of the city.
 
