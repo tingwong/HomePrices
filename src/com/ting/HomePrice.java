@@ -8,9 +8,7 @@ import java.util.*;
 
 public class HomePrice {
 
-    // TW:  First time using HashSet -- is it a good choice for a data structure?
-    //      My rationale is to keep the cities unique
-    private HashSet<City> cityList = new HashSet<>();
+    private Set<City> cityList = new HashSet<>();
 
     public static void main(String[] args) {
 
@@ -33,7 +31,6 @@ public class HomePrice {
         friendsInFarawayLands.add(doraTheExplorer);
 
         // Making list of cities
-
         LatLong torontoLatLong = new LatLong(43.653226, -79.383184);
         LatLong seattleLatLong = new LatLong(47.606209, -122.332071);
         LatLong kashmirLatLong = new LatLong(33.778175, 76.576171);
@@ -55,9 +52,6 @@ public class HomePrice {
 
     }
 
-    // TW:  In this instance, I'd actually like to have addCity be static, but then it can't keep
-    //      track of what's currently in the list. But then, I have to instantiate HomePrice each
-    //      time I call the class. Is that okay?
     public void addCity(String cityName, double avgHomePrice, LatLong latLong) {
 
         // Add new city
@@ -96,7 +90,6 @@ public class HomePrice {
         double totalHomePrice = 0;
 
         // Iterate through list of people, get sum total of all average home prices
-
         for (int i = 0; i < people.size(); i++) {
 
             double cityAvgHomePrice = findNearestCity(people.get(i).getLatlong()).getAvgHomePrice();
