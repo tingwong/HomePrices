@@ -80,20 +80,6 @@ public class HomePrice {
 
         }
 
-//        // Set the initial smallest distance and nearest city with the first city's values
-//        double smallestDistance = Double.MAX_VALUE;
-//        City nearestCity = null;
-//
-//        for (Map.Entry<City, Double> currentEntry : distanceToCity.entrySet()) {
-//
-//            if ((double) currentEntry.getValue() < smallestDistance) {
-//
-//                smallestDistance = (double) currentEntry.getValue();
-//                nearestCity = (City) currentEntry.getKey();
-//            }
-//        }
-
-
         // Try it with streams
         City nearestCity =  distanceToCity.entrySet().stream()
                 .min((a, b) -> a.getValue().compareTo(b.getValue()))
